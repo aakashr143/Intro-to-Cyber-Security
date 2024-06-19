@@ -1,0 +1,2842 @@
+[
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "circuit": {
+                "id": "4 BIT MAX",
+                "alice": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "bob": [
+                    11,
+                    12,
+                    13,
+                    14
+                ],
+                "out": [
+                    101,
+                    102,
+                    103,
+                    104
+                ],
+                "gates": [
+                    {
+                        "id": 20,
+                        "type": "NOT",
+                        "in": [
+                            4
+                        ]
+                    },
+                    {
+                        "id": 21,
+                        "type": "AND",
+                        "in": [
+                            20,
+                            14
+                        ]
+                    },
+                    {
+                        "id": 22,
+                        "type": "XNOR",
+                        "in": [
+                            3,
+                            13
+                        ]
+                    },
+                    {
+                        "id": 23,
+                        "type": "AND",
+                        "in": [
+                            21,
+                            22
+                        ]
+                    },
+                    {
+                        "id": 24,
+                        "type": "NOT",
+                        "in": [
+                            3
+                        ]
+                    },
+                    {
+                        "id": 25,
+                        "type": "AND",
+                        "in": [
+                            24,
+                            13
+                        ]
+                    },
+                    {
+                        "id": 26,
+                        "type": "OR",
+                        "in": [
+                            23,
+                            25
+                        ]
+                    },
+                    {
+                        "id": 27,
+                        "type": "XNOR",
+                        "in": [
+                            2,
+                            12
+                        ]
+                    },
+                    {
+                        "id": 28,
+                        "type": "AND",
+                        "in": [
+                            26,
+                            27
+                        ]
+                    },
+                    {
+                        "id": 29,
+                        "type": "NOT",
+                        "in": [
+                            2
+                        ]
+                    },
+                    {
+                        "id": 30,
+                        "type": "AND",
+                        "in": [
+                            29,
+                            12
+                        ]
+                    },
+                    {
+                        "id": 31,
+                        "type": "OR",
+                        "in": [
+                            30,
+                            28
+                        ]
+                    },
+                    {
+                        "id": 32,
+                        "type": "XNOR",
+                        "in": [
+                            1,
+                            11
+                        ]
+                    },
+                    {
+                        "id": 33,
+                        "type": "AND",
+                        "in": [
+                            31,
+                            32
+                        ]
+                    },
+                    {
+                        "id": 34,
+                        "type": "NOT",
+                        "in": [
+                            1
+                        ]
+                    },
+                    {
+                        "id": 35,
+                        "type": "AND",
+                        "in": [
+                            34,
+                            11
+                        ]
+                    },
+                    {
+                        "id": 40,
+                        "type": "OR",
+                        "in": [
+                            35,
+                            33
+                        ]
+                    },
+                    {
+                        "id": 41,
+                        "type": "NOT",
+                        "in": [
+                            40
+                        ]
+                    },
+                    {
+                        "id": 48,
+                        "type": "AND",
+                        "in": [
+                            41,
+                            4
+                        ]
+                    },
+                    {
+                        "id": 49,
+                        "type": "AND",
+                        "in": [
+                            40,
+                            14
+                        ]
+                    },
+                    {
+                        "id": 101,
+                        "type": "OR",
+                        "in": [
+                            48,
+                            49
+                        ]
+                    },
+                    {
+                        "id": 46,
+                        "type": "AND",
+                        "in": [
+                            41,
+                            3
+                        ]
+                    },
+                    {
+                        "id": 47,
+                        "type": "AND",
+                        "in": [
+                            40,
+                            13
+                        ]
+                    },
+                    {
+                        "id": 102,
+                        "type": "OR",
+                        "in": [
+                            46,
+                            47
+                        ]
+                    },
+                    {
+                        "id": 44,
+                        "type": "AND",
+                        "in": [
+                            41,
+                            2
+                        ]
+                    },
+                    {
+                        "id": 45,
+                        "type": "AND",
+                        "in": [
+                            40,
+                            12
+                        ]
+                    },
+                    {
+                        "id": 103,
+                        "type": "OR",
+                        "in": [
+                            44,
+                            45
+                        ]
+                    },
+                    {
+                        "id": 42,
+                        "type": "AND",
+                        "in": [
+                            41,
+                            1
+                        ]
+                    },
+                    {
+                        "id": 43,
+                        "type": "AND",
+                        "in": [
+                            40,
+                            11
+                        ]
+                    },
+                    {
+                        "id": 104,
+                        "type": "OR",
+                        "in": [
+                            42,
+                            43
+                        ]
+                    }
+                ]
+            },
+            "garbled_tables": {
+                "20": {
+                    "0": "ea624419b0f547858f02334faac6a1c68d8aab0bffbfde7568290dfba62527dc472424c3a6d459a6568e4e57f5538ba7aae4c6af385980e09522e8462bf91f2b",
+                    "1": "9bb540593d1e751000234d69bd7127a2bcad7b83dc54330b45c48a5297e5bc663c7edf5dbf8a1631f96274d6f91e500ea0f90a4bec3aebf81f3aaa670dfbe8df"
+                },
+                "21": {
+                    "0, 0": "f14f55fab9254692b99226ba88b40d0db09806045966f09035e6af57943c10e6dd4a9bb992e10249eb5c4ec9407c90168992a9668b365969aa8b7ad6a88473aefe856de96e06b8c2e4ecddf800941e34b65c4dddc086c2348cfabf67a993f68c",
+                    "0, 1": "0defd28565b64c3c6565d773f466a0e6f0f7f4c18c682965c5342150a4e592619343cff484363ef9c053bb3d0b5f7b11bf4f10e9c9ea34ed302c689121f074430f38555cff8ef814c41872de1b20f62f1cb74bb0ea418643dff808eaf523e49a",
+                    "1, 0": "2ad82c463d859cf080f59eeb681299e89709a4deb844b5e5a28fd02c317e0089dfa1cb6896a37fbd4051f719a83b834e8bb657691295bd94b5cb77a6765da2300f1a71c6d25effca9e465d0f0c430da55b2c7b99deb9af5753d84084e450f40c",
+                    "1, 1": "e34ebc1dad01fc5d832a8558d7598859f47b33e74844a4c65f5a6caee6bd81d11ea9b564f56f69b6fa409c32f30eaa21777c940c3dfb99ece542fbd935b71b6d72e99cca34332e0a998b507356a90b2a61b1da2dc0074c965b33296009d672fb"
+                },
+                "22": {
+                    "0, 0": "e06bf2214a3d1d19d401fe1aeda075303aeab994e45bf82a9810b9338c8f386d87973bc40392f45490abc146dcba550c750d82c3f88b2aa7ee942e11580eda5cae4997e6a79f9bef38f4f73d99b7c713682a6495b27d4a6728f190ace23be195",
+                    "0, 1": "a6dab00d2487bfd93d4f369a2ac4e690757bb90eb80edc13f099a39c4d42f6047a987bd33e81ca2c5b579436591d638d580591ba6a3343ececa2db4fe4ee76b6b77ed0a1b1601a18ccedec6d84163c87e3b7043eeb50ec70e304d04397c489ff",
+                    "1, 0": "3bbd12cf54733eaf338d7bb71ed7962af90a37d8a56cc215d5f0b026841e55d833237e5eb37a4bcce54a44726090f2fe71c051f2df4e664de68fbece8e3fe6641944bf5d1af34cf076080ca9f687be39077649d1d85cd101dfa1053dc7cb1004",
+                    "1, 1": "0524f53081133b7e09c6b610b4a75301013c1be999619bd45867b186b1c5fa45d31ecfa57074bdcf3bcf03447e227c302a43be5f25e74d8605198cc55525c54bb2d7962e1f9309807ce3926e2f582e23c2d3c30dbaebb9b3e7d957572d2bb657"
+                },
+                "23": {
+                    "0, 0": "10b18185bc4e737e2f105f9d83930798df5ea77899fcbb591989f8d5e67603b21ca9a00840a5174b8911fba8b8ac281a48b54a3562c5ab84c86fa523920ab92b900d4aa21d12216ead7c71b6899c8bf081c06fcfe603f63c0eeaf69b01cb99b5",
+                    "0, 1": "9d375f5dd685e8e0022ae03846a9be554d7ea209f6359a40e447bdf7c426b7d8d28d71197330300680cb26e4948871c79551cf000b52a7c1da71efad56d17a5569d3ef786a5c20126b1077bdff592b1a952f016a5a5d2e737dab6f36d6868cd1",
+                    "1, 0": "df17b67319cc7ca3c0f0b6ea85e7299f56e6591d37b120e90feb22d7d28cfae4d50e9d33f361bf1229ca55e769fce4a7f405b949798f06bf250d30e2903c58e554c9dcf1ca2491629a1805196c9f5c99243cd3a9a06cc85bff14954310053744",
+                    "1, 1": "5badb683e5764cbf7e917ac6b849052e439e67d2c256f6a9f0d83184d6cffcebe57d0bbfdc234f95da785be612e955eef6d48e5ec9c731a7e8db81e1be22115f478ad3815cf6c623d0282bfc6eac050c35d210cb7ce035bcd9fae22d842fe200"
+                },
+                "24": {
+                    "0": "a3b891114821b3ff1df5c891a3d4fa69cf9dc100a17f0890e1ab0134140ceed42c710d4bc870fdc3710cfa740a6e494dfec52ad6769386a92995467e5cefed6b",
+                    "1": "a84a1cf2b376258318839444b177059f8537773c97d2b783078ec1141e7cbccc44710fe606adb887e8e888176c51f86a97c042baf40d2ed8ba795ca3bc2b32fb"
+                },
+                "25": {
+                    "0, 0": "a99bcb3e9083eacfc059128a53db2706ec62702d06d317871bf288e1991f5925c632906e10193c6ee498217f99a8e177dca73a985da44eddaacfcf9a9a9c1b8778c15856851c9c8b09396236a32c1f566b423a9481715c371984aaf9a3aa1432",
+                    "0, 1": "d0a8cfabad4b143505518219c8d70006fdda37d6c64ea736b898f59beb88cbcfa233a2ec96d6034780d46fa239c4408f9f6777a39bdd92d8bb24f4dbd58773ae3b07c7ebf193ac8f6f16d4b0cfd809a20fba97aa5c533817b5b1dd606bddd608",
+                    "1, 0": "a07ef49b7af3b4b5ff1454119618056bc09eaa8ae8f941efe851ab19fc79b3654ca43f4710443106d67f50d1f6d40674861e75b51537b1197092c6107d415d0440ab66df7b4395b889cd8e3eb3a4aca444a290b852a15d12d57ffad4eb079673",
+                    "1, 1": "6ae88de589fdec0dd896fb44e520d37a0080943f63ee67062e0e9a13846ec2c0aa06cffe6ca4321846a1bd33a30b4d17796f96f7d365de5fade3612bd71aea126e032fc5d964c8bfeeb9699d34fd3d4f58a8ea8eb39c27e6c88b76611fbd3d41"
+                },
+                "26": {
+                    "0, 0": "2ad07b6da4be7a11d0de6021feebe679d7e76585e78128ee3596c58dbc21fe34fbd8c86f66b2963112781fd3ff486d637c08e5b8e22704962c93f860cfd8f7321e52d8bfe0e39547ee281e00ca6ffaa1c4a8613470f41f022f1cedd6a2206cac",
+                    "0, 1": "bf7d6a318582bf33ee5ff20659811d68f846e3c719864ea8771fdebe054835bcb3d18020b53aa4267254e3567c7d64fc1fd01c50fe0827185dc4e7de5da9d77df059728562745fc52081a0f950cec65c08ef80cca648562aac682c9dfef9d4c7",
+                    "1, 0": "81a5b59e3f38c113db27a4d0d4963c4770cccb3cae12f001778bd83c902d4af0303b08604952519bd3b399464313ef7038a5d7adc54ba53d070bf24496c80c3437c3af75b27b38975c4c86058cf57b65eb2e18102c49bc8593644e69d4b97610",
+                    "1, 1": "148cb988862986ffd3a53eac67435e60baf633873c92bed2a5b5e1e1c72b9ff48ce7e1e7740984bf8909b142dbe23ace93868b85662ba5eda06fe2d82884e8c9eca8b978fec9a46b88b66b6e18eb568549582fed81494865831a305f056b196c"
+                },
+                "27": {
+                    "0, 0": "42cde1df8c3d5b5b9077e3b9072e453b3362070d2afd5e115c165da7b7777510ec78e6b0da9389cef29b9bc219ff5e6d32ccbf3abf9c06fbd6c8ab4c4d610353ed122659166c809fb98142315e2433c150620225cfaa6e302c8ba8107c8781bb",
+                    "0, 1": "d69bf8bfd3311eec9a3282e2d6a83c57c70b21092e0d4c74f96fca8dce05dfc733ff706a719aa574d344b32bc61c979a91cfc32243486e9585c145cf8ff4ad770250ae177358037f1df9b09b44c02518881b9be015a4dee5d88646eeb24e11aa",
+                    "1, 0": "87c82894de529a1cced349dade8768ee149359ff2ee4db2f7f17593679403bb79787764cf6a7d13b5798d7b4c85ba292568e389a93f834876c996d49b5cf302ffe5d99c9443b635da5be851d381929ded337dcfc864a6f120e578432c79878df",
+                    "1, 1": "d7ab74a329d58f97258b42abc646358f2840a37ff326d21e16df13fc2816589b6978f7aa627f2950254d0caf15d416d189837da25142ac099b15c20e45736548aa98a36a8707648c5d71a2cfa93a57b68f9455121e655eddbe3f168279be9072"
+                },
+                "28": {
+                    "0, 0": "2c0825b839930bde910687a455e748e4cdcf8f06ba1fea4ad7359ea77c8a3914a48145d54258d94f8ff98988e793e651e701c12c46cf9f71d2432e64a8e6feb9a8a407ddd2ac34f6bf13102b24aa3f4dd9d4edc54aa97f06ed98aa3d6b9efbd8",
+                    "0, 1": "9d6cc837b0502ff89f727b3a88015d55df697b8d98f3111032187d42a8fdef1fe297a955b13d9e833d0ae5c04251be7863dbbe9fc40cb57c8314aa2409959debf374301b588bdeac498d4f52cff1c5c1b99cc2830d89e6e8751494409ef9659e",
+                    "1, 0": "e98e912ab04f486244da6d20c57d2feac26023f9bff0a1114fd08e2652f864f78e6ff9b97d9e8720dc8cfb3965bd246db820359ca2755b859892c740335bb3327364de6f4c1f6ef221d1cfabd8d79b69b4ff2d6be549aa405bb2ba1cca5a65d2",
+                    "1, 1": "87bf916c80c82c6d858966b10bfdf9c147ec2c6acd14b80453670c7db7be4374f356f2782833c7cb71a918c4b0194a61a7a255233e57fa9fa9f87851e1559ea9b1283d72cb5adbf0bc62cca65a6d1661edf350c76fbb1043f20a01e390eb7383"
+                },
+                "29": {
+                    "0": "576da6b8f5b94cf05f5f65dcae883251a844dacd722af45fe3afa29c552bf46b33e40d1bac4b9e73ab8505100127be0e066cac6612e0b32418313381c1bcdb53",
+                    "1": "dbeb744408d2e4cde4992f5c6199984501bcdc29bed14bb735d91dda035ef559236d4cb78df3a18c90c1695fd52c17f3aab1462548d749743fa5d0334aa9797e"
+                },
+                "30": {
+                    "0, 0": "35cb5750eb5ec16141e28fe2e68360768216ce8e6edb73738fd319f1a3ae5aca69d1a1a2306a537c08306af53174fd73038f5e23f581f8bc5a89e90519847dc09855e0fe6984975490c8750177f5935c5bf9faeb8a6aba3bb0748995963a02bd",
+                    "0, 1": "169c738f961ff36e54c058fd48286eb3dc32f896b4f38096f784728d124de5871c01f35f98ddcffd0adf499209c5e14a38e21040d865c6ba7260073374bc37776fa652cac6aba512823c86a7b9565df80abda03b28fc85460be2e3d116d3a867",
+                    "1, 0": "79905225dc18d1055c0d488554cb490693076a21821d0f385453091614e1d0ceef5912e7b5cf41f56cfe62602ce83f88633a07c0ce86ec42da1e5ab6eca89fa8a370bf9b0c2d82c17a5ac61c74a4529fdcca6b11122a75c69b4e24bf0c637c19",
+                    "1, 1": "b166704f9e2c9827928c777c69d41f3353af510a8998a8f53cb4b3be4a4a0b8edb0fe6c21c77550aa8ec7b75e6c2400c6c9897070f9514819dada8c5e132f0e867182bfa2ea217c01461047f766c0ffba52a88c43b992bd92f13c58251c3af5b"
+                },
+                "31": {
+                    "0, 0": "296abf0072df11ec02bfaaff6ff25ef849cb03a15f0bf04a4b528b4436a9f048d1720f518c8395129af06ddfbed3c49e86bb7c0a86f7b9a2ccbc5c71486241587b8593bf747ed4ea780eeaf739029cf548d9b25c94d878c89598f61faeb09258",
+                    "0, 1": "d8d904a8e6499eb02364b22d14c5cea485a0b6e3d285d2b178fe7e65e1a79589ce26c88ce9392988a3dcca27b41efdb028ee82356c3748db5d74a55c08ab6d8035cb5fc4f145090ce26be260f59ef9ffb9f80bd4217dcaf7d0cc4b88c9d6114e",
+                    "1, 0": "912657e3e57bf39a6a681d77af9e121ee62d6314cfc8f15b0422fd266fee1a06d0518c8625018ff1616c4fac05e146ef519e1ba47ac476d7cf546848bdbd0460a474b20ec5591c996eea276cb7eda4bb54faa353be1b579285d9f43952d741df",
+                    "1, 1": "49868ad724306cdac50a81be1d7ae7637d19a59937aa4eebded4ef599c7d88348f1a1a58d05bc97a24ada5ae68d098e8c8d0e999b6595fac263410c747407e00092ac0717228bcb0fe330b670fe0fef83caefa5797f18fac50bd5c5607798bc4"
+                },
+                "32": {
+                    "0, 0": "6c81b95d84a9b14f58b8ff218447ffe960c6196b0cf4b63c0fbe3ba5eb65ad2c61778af6f70bd7d0d8ede4b5019a60355e6a4d6496d1c20e7fc56bdb31365ec684b1e62abf91c9aa8211a5fba6cb929c3e3215cbffa7e37dbad31cc9a618e612",
+                    "0, 1": "5b424ec0b6236fd11982370401303a2825b0cfb5fd5c1d585dec3eec8b4dfab63969625517ffe0b1a8fd38f72a807967ea98155eed277c1d3d5c63ca65a9219014be399f936f52026d07f80dca6441829be6d5e03f9db36a0a3db806d717ef68",
+                    "1, 0": "c09f0b5b8877682c319d4af9fe4b904c365ef7a80c0f62d7df40b7455a67cced0f3fdd51fb372a5aa3ba8763009f7e00c3cc35ff54f6ede8d6a66bc391bfa07b2706f216d9ba774f06254d9388a7a51506280148a9b25227a1e144ace04f239c",
+                    "1, 1": "82d6a966839f9bec872ebd079df2258b3a2fcf9f3a6f3e527b92ed20c5ed076838c068b7f7afdab6cbe770b1fbef7249f7a19bd62b3ee8fdfaeb3f66f261e8ddc78473a72640e69903d0cbface766a53013947de4552dcca68462c08637290e1"
+                },
+                "33": {
+                    "0, 0": "74ae8f89fe1543f1eafa6f6d8ab7363fb1bff302b2d8c3970852acbc3014935eaa92b61f8c35f83c5a4bdaa7b565606f82bc865827a4f077689cf9763b2b379f33c1283b415d01991f592142e9d6b7d14070c61c45b54b6e5073e9b8bafa4dd1",
+                    "0, 1": "56b98774be58b6d5009dc16aa81692ef1c78da62c7c5692b3363dc391395af72a5d98027ecf9e664eff9ad3100fea02029d05f60da36e95dcc523a6b9ccff02baf8afbb15a258bbf82b857d02ea0bf3339ef93ba426be5e6008882b5859a1346",
+                    "1, 0": "289511628dfd195cea68b459ee162468b4e765a48c0ea46ce67bacb4ee27a97c40ba9355da0869ba3142ff1ed61cc77327b1f10ba0e3e30a8a6dc175b80fc80dc90ac32e84e6ccb16e563febf61fbd588b175fdd6c3439d3dc8fde34ce4f282d",
+                    "1, 1": "30b4c18774bf62a408c8aeab1b845ec38958001616061f76d42f836ffea77efa26c7c977da018d27f0ccf7d9a016c2bb8c015b0662a27f77bd5b95544b4f02e266063585c47b90fc363e2124e18d8a7af2d25925bd5cf62516cd0c0e3ef2131c"
+                },
+                "34": {
+                    "0": "77d1320462e895c7b5c31c504a5360c7766459d114cc52d1867e070073cc40268a594b3b4df20f7537fb7cfd2d146b064db514551567db67c9b0ac41a27352e3",
+                    "1": "94949223296558d7f05e0416ae31ae73731bfc91fb5bb164e144d8c4836f27e742eebd2beba8147eea6892f29e7b9b52e6980bc3114dc9f23f927edb0b9a6054"
+                },
+                "35": {
+                    "0, 0": "39ce1751527a7f95a8d433a7971f5ddb39d521a3f965e3ea5c2e027781a3b8545f75b9fa651aceaffcd8a98351e416a0beed5e3516bcd50c53f1d3f247338b53877431b876051e48ef162455bd73ac3bbd434d207fbdaa08a48075c8d946bc9f",
+                    "0, 1": "54a34acdd0c4c224628a5651a68359a23d099d7a5584df00c39de41144cc2e6a5d0ed4d00dfd38fde035570ff928641a1c416c2de97c88c1dd0dfb0612cd5ac776c1a07954b111322b1023a2ab1f2b2fe4ca668778bcdfe1f23e4ff0de60da86",
+                    "1, 0": "66a2ff436ed5a5bf996d819b2c8f8a644e4be7fb81557198ac46d180a5868b08c7c1b227ae0c31ea5c709a2280a14264ae99e521a7a4e785c2e9534898f3973dfb5528f2920a756d79549dc85ca40df53582ccefe2480ed4204728605c96f023",
+                    "1, 1": "e5c385d7810ed5830b595c2ece8ab4b6d062fc5121a421a0eae2efb00393efd27eff1aff4c1c01e083cd488f3273c9e00f1e8a082e3651092973160b02827678940e4d8dd43d92c375a3f8d891e9707388f08d969b93dd46d3d195ba0e900092"
+                },
+                "40": {
+                    "0, 0": "bddb2ce9c788ea05d6018cf7c6687f3a2a02c12e7fef16fbba866f03737de2d561ad1ebf63214bf028cca74f8f25d0325ba3dce36fbfd8e8476894e74a30e13d27692d30d595a3436a6a5dc8e93228962cceef7804435cb3a7ed067028119480",
+                    "0, 1": "e7bff090ac0082ac7c5bc441bc4bb52f6ace561faec6fe9af73d061bda44212679b3c0ae3c005d544c95a933579076843a1a98c08a2e32ed4b2f8ac1e09e8ea8f3dc061801a7b2bad1e3d49d62b9572dd037400077bb2b8f9fd1bce72137d4c7",
+                    "1, 0": "fd53a642b58b26a68c743009470c552e866e4c3d76c462eb755a9e2d409455f6efec67a65e90155aa0f2e477c5cc9b63bd75b88e229a98605e1b34470b43bee678cb7dbf89b1a3148f9cfb25a2eef3aba61994fe0f7aa967c873d6c8be032ebe",
+                    "1, 1": "9f2e514b4d952c610f79e0fc26418b67a653cc5a4c207e61e053cc4acc22fbf4277b1b487e51000654420b82bb63366fbd8e7e25b7fdb203202353550a7b6ba624c6f022d1b013cf5f2c183f4ec1b02158f3787f0a288511f3597b4f44ac32a5"
+                },
+                "41": {
+                    "0": "ad8c2a22d9a23cfd79bfcd3da3a01828d5cd0423ab3aa760ed3f2c214ef9d023917845dc4b718100b7e4efa4021d69bcdc8e636eaa445aaa3bf8946d95d8689f",
+                    "1": "dacfe42b796a87cacb06d9cf0ecb7df6ce31c021321d996d87791b0a4072760172955c0e22eb55109e12decacc5c28063ac569ff1492fc550674dc452ed340e1"
+                },
+                "48": {
+                    "0, 0": "61d87226979eaa3a08cc589ea46d6a22ffc647d8519d8928cc4ca1cc72c02a74b2bd978f0975bf41f5b9e443f8102c5975a530f45a28a918ac16ac67f1e48a2947458e3aa295fecec5c5b8b689e340ff36701a79ce02686b2bc8fc83cd1562d3",
+                    "0, 1": "a2f5cf10aa73f07ee06dfa72b2dbd89b2815cfe6b61996539703fb3bd7d8284717b98c550d668f17c8028d3caaa05884f703ce2fe2ad7690a82ff00d65cbd4a0e1a06c346be8c8bb17451cd983c397c85240872298cc937b3746b859e5175c6e",
+                    "1, 0": "ff630b76b7b794f61020dabdd277c2c1cbed972e20ee12408f7560a64ef7a07dfc36f2860335c7d9b02eafe7d29713bcf66ea672e14fe6f1681b78f7b26da1c53da9ac8d356cedef50ce40e9a7576da3c4de5201c831b771b051d4ffc583fbc6",
+                    "1, 1": "843353c1bc303bf25bd5f8bd904ffd024315e0ebb66ade0eaf960e7a92a39d11590b96b63679ef602ec34afd7c90066c2a81d24e7c98888d0c309caa91210296b24bb6df102a7f5ad7a8dd838836c873ee33e9f90669d8eb156506b0aa050086"
+                },
+                "49": {
+                    "0, 0": "dcb6ba9f8d8f925ddf2e4868ef0a621c57e6642cf8c67a29f881c33925974b7425e005b8ac59ecc993f1178fc0ce0c61ee146f786fed94a9b90d37a5f3cca26ca0866e4cf6ee626c1e2d3f0ccab0e72985349448e919d46f47fed61a534e398c",
+                    "0, 1": "ffc46528db6870d6d1e5d21ea888ecd3b7e9bcf82a3ccfd9ac7b5b73b77957154b6d43bfea98df67d3831e66f93772268846b0cecae6bc2dae9f0de3669870635f17888e6c7bfef4bda1ceaa13d36b1f533ff9b49d61d68f844b7d7733888619",
+                    "1, 0": "84bf0dcc6d4756c84e56f8957d79cbd943f1a3163dfbb8e86e1843a6a6ba8807154be279808227fe16807f0c2dffecf012773657d32b714223b7c75a706e7b4898908750754e8c113d389f38b444f001e37ca3fcf4be670c12d9708216d718a5",
+                    "1, 1": "7dcef2dfeff7c7fab27bbe32211c38d34e88b2a527cd323c2a071563ec70d20ee0f5293dc03aff729c62c9598c2f0c6f1525aa23143be13c58f8ffab8adbb63593d56a388a9a98c2916c8d147eca6405bf2bf7fa9921da805fa8b194dc757c78"
+                },
+                "101": {
+                    "0, 0": "6c20a13c20b6b1f6efc8371177a126bb493a0dac1830c45a1f82fedb4f5cbbc51a5718ea13902996c87733145f5177346a094a671e8e0a017dbce630fffafa7d9835928794b89bab892ab0df10b1e64dd029f3c486643e6ab8ef55688f57aabb",
+                    "0, 1": "3793dc20074e97634f26185044061986b496130451973ac95c3dd8f1b80e8ece7eae465eac20756e5f60cb85d94e4560fe8fb527f476eb8080d33b98b4364445a0edf2b38a527a00d47c6392792cd6d44fda8868f56f271b8b981610beed6eb0",
+                    "1, 0": "300cbd5aebf3a1291d0086d62574bac8d9c8ade011a70b56b92910ee3e1a2d73fb0f2398cf7d9b840e5094a56355f8ed5c5dcde6423383fef1861d77be15e85f0c41e68e98ff72c0abaf6e9f143e4d76f3548443cf409dcc074fdce2edb7c495",
+                    "1, 1": "ac9c75c42da5063ace0a5155e23a43756d7135957d14a8f453d6d60f9f02f5cb163d14ac4eb80e10d369820d110ef0b2158269d9537b22856ac6e3552671c458641347f5e9913546fdd9ba70f52f80d430ebcfbe2040ed920423d2a911914be0"
+                },
+                "46": {
+                    "0, 0": "253b2e5c9c5c7840173d73c4cb1afa961b4e39b8829dcbf1a904148b334e33841bdfded11dbd488ca8ad73f2a83358d5601f7a56c7d39ea8c0f89674a127c948fff1887d99ccb8e79f135caf52fe567162352594aab1594ae6ef9ad397a873c5",
+                    "0, 1": "a971390ecf92b5f138483080e0f6b3b3b1de59cc9f41c7afe55089b3456eace1abb5e3d4d3bb184aba90c2680661426f0d72efa75eac630ed8ac3ffcce865bc9a584e601401521015805c92a69714b3f6d589675c07c3390cdf56748df22f4e6",
+                    "1, 0": "4a103fee2be68251227f8172406faf3aeb1347084edc8cd245a119f4f60d30249ccf80373cf08a18acee5f07647e6394facec419e5e4adfaad21f227922e7dbd20aaf0f0602955ce4513dbb44668be4a7a9263e826f6ff260cc76dcd76bf94a9",
+                    "1, 1": "07fa52c30c99eda2584de46f58e78a538057eb01da656b73c0bb532aeeb2f62fbbb079c50b7805265cfec04971f60f310d35443f23a6032556a2e6ee06bb80412ac83109d284814e130725bf822d68711287d84c8cfe3cc0f94a1ae83c88f573"
+                },
+                "47": {
+                    "0, 0": "1918f5bca64559241de76c705105b33ed3fd0d8369a514ed32dca1c9c344935861fb06eca83510d168ab08e2e4df597c5354588e5665e242ccc7a6a8dbd10013bd6f52d2cf984ba264c88c32131448a547c0d611dfe8e8e9664f9314f277ea1b",
+                    "0, 1": "7c920b779337b451fb507a22d5da613f24a951b23e58b8cd734c4ddd87030c764f14891e67e9c321503b15a1033b221444b6c9de0331fd5f37296db788891456628a71ce6003e673ca91ea9f9f89d258d0bff4ed9ddb63395f65f3bf20ffd6dd",
+                    "1, 0": "6f383e2b535f942608483bba403f1a6fa1737dec92deaa18c5c968380f5f43fb7b257f0cce5ed9255db08b94deda327212754fdd3d40691be5644b35e639ecf5e14c196065747697e789f148ac7b44c0943fccfd0d7208307704bf7dd78ddc92",
+                    "1, 1": "46b9e2bc633463413651e9db7209b5f0ea4e889736840cb625e07ab2e5d66ab0247b6781ba1184f253068cc3d4fe84aff703e58d6bbe0f26f2043d2e3ef46d977be36f303333277f4b000511f05de2b0775fd4f4583f39644b5fd09759c1bb66"
+                },
+                "102": {
+                    "0, 0": "ab7d9c131a5de3eba478a4394e1e1650e0f22ea0c71a2b638d75e08ecda1a5999752e2c58aa5b4fb9b54ee7f556cd58ae3bbf60a3c47fad50dc115920803df943255c5341a1dd928dc4d4adde36dadb4c18fa68daf3af1fd74fdb54b852e879a",
+                    "0, 1": "c66a9ab2ad12a0678a57de7341a25cbc8c80f0d6a0ed5e278b11a9f52d52e5038f7a41c3082069292539065b7e38bf67df6a625791d49e15ab9eb5a105c591ed78850e1023b2efe394a3c54dcebda02afabc91237f2de85d387af719f8c8ead2",
+                    "1, 0": "0bc45951f9c1801c9c76a1ff5684792802aee19e1b5a2ca0fa7f09d79f2ebe7884742342175b1ea9a83ab49d082f93b585a08a44de4df351eb4e1ecd948af92166be53907d47758dccfdddb662289e78e8bdeb048ac7f6bcbc8392b9aaab030d",
+                    "1, 1": "d39509e049ca0d4dcc607c63bb5e6f1f7ef697ef3b2e92fbfb900ac197563492b6b8e8fbdf7bc060e9ef56f5d75a83dbad44ca4e15175d6df0bfcf4df57596a0f445f81097e133019edb2fbaf85f0584ee740aa11ee047d1ca796c291e310fe5"
+                },
+                "44": {
+                    "0, 0": "97c144340cf28b242318827a17fd5581a38baa8d2046b090393960976dca5f16e70d8f6dbc5bd1e4d09544bee916653846cf7d1fc910eebacfd528b486d136f57aadf193ef3d9b075221544f147922191b8af4b6c39a3d5c3b5ff76eba8bd104",
+                    "0, 1": "646acb0b52c7c6580dc3ae7f95ed2656761f79d1ea926a9805c85602713a8f63e9069bedcb7fa5cc3e2ba56aefa72a5d9bce15c48b50b233e5576e335e8c9399cd59b0e85ab96f1b39b63a06fa6e61a57ec1eb6e1f34fe0b82cc3c868e3ce1f8",
+                    "1, 0": "b01d1beffc5ecfaf53b7316680408141db0817813707f92fb87a4c93326cbb069862846673e08e614f164d736adf46de401744213fabab9442f397abb269d6ca5abf31b5f9e43128fd287d0ecb505cbaff18ed7122e02ff4449f28df299f5964",
+                    "1, 1": "378d3e8aab232117bde2fb2d5004e2a50b511ebaa18e9cec16ee72f055de4b8317949bb99ec85d3c215a93444195c8c62d0085ff89a950def3f33cb49b8a11e371a71a23dec7b801dda71a4989a272383055a27a75685e3179f9cd5736c63d42"
+                },
+                "45": {
+                    "0, 0": "11f9a826a2b1cadc5694c1ce0b6236a410f46632b7b1e83db40e6ad18d19158e47ab01388bbb26de5eea4f09870f0ead8f4e20d68de23fc60dd3bfab607f8f2f5cbb8894bc5b9dcff2a19ee9655d1242cb59bc5196c22e382324644002a2b66e",
+                    "0, 1": "30c0201eb1536366158a85ddf4cf4752a454ef1c1c6f44989b9580f0c881c0ddf3a8f2602e9026694690788285e932a948d754ba1e6f20a712bfbcb2e67b600a0365d7951b5d7d94930c8e0b6e035a9b7484236a1916822d8d3184b5db31d083",
+                    "1, 0": "da0f86d071e640f6ece448c893c7b43c5369fbe93835f6df08340167d6fc860fde231cf820aad874972f623abfd0d629c1c2b82404c351062762b5a2bc945892cf6391863f386b7472a2cb8c956397caa480aca6bc7c5ffaa7c018defc24a1ea",
+                    "1, 1": "09170970d06f830f79965f434aa7afb676861e49605a3094275dbba15c3016219d036bfdb040e79863d12b943be14e98e9c73067b573451765c3c60cf3172618ab4047434881dfa068ed0e30995a3cdf2cca8fd45a5eca7d4b5e1258d1ecf543"
+                },
+                "103": {
+                    "0, 0": "53dad3c11135c0b40de6f1ae27df653727d377a2a2805d3ebb500487b77a56b245202417f152e92aaef6d520eb0e088f1a5c0a9a9da3a2355862f9e47657d054c0bb453b337ff2a139ce3ce3ee8a3cb2b2f6ef2f5fe76aea9fdf47c29d6b29ae",
+                    "0, 1": "4d0f5ff249ac561d73173d9afc3e8f1f3f5e090448adb6272cd34d69a5b94b30e09cef82c807458df773ab5735d9278e5a5f370f80a2a496b2dd7f4f84523a301157f2272066736269ab6496706a9f65bc9abce8b98b015d414808d1095622f0",
+                    "1, 0": "e42c3cda0a49d2211ab6945953910a6a13b815c22ab325a042380af260255f432985f798703b23efc78c8312728dc5b934c4927a6101ae4407f1d8bdb6b996e14e777990baef8949caa07a68e6f5517c346aec5ed8588fca8780db10e5155d2e",
+                    "1, 1": "ea6a3390ba29be3ae5b039f9b741d1c7aff11f3d1ee9286505d310d5f8a0bca0f6a400f3ab52652c7b3e1edd3f35db05d5ff9f90b105c5cff74a3f63564a43a9430ec616a09e05c36cdb14a2956e0c4d22750102936842a3f402251825937696"
+                },
+                "42": {
+                    "0, 0": "949c165b5c22ddf4d7d9472f1693f3eb49f2bbdb14d8f011ecad4cde3e47b2ed2037c6ce5ff965b344ba1154c56d5a6d6e848bcce6595df0f8c89ea4be9ba5000137eff8c201e9b5aba5cdd9b968d9e809bc357123f124f143e6cef1601305a6",
+                    "0, 1": "7ac3cb9c0cab91f6d272a21522e5dc18528ee989965fbd5ffe265ffbaa8084776bc1ee915b7ed2840c1d0b40646698adbf23735dc87a9df6f4addb37c2e43789fbff7441102a512f9c2ad5b486b8aa96c5e651afdfad7306b68a0587b315c31a",
+                    "1, 0": "7cc66f678e429f42595f06e63aad624eb933160c24ef2de9d451d4d98bca29e59d1ebc68da7def43aee2ab591ac4e22ada7f9dfd4c94982c30c645d1f0347f0aef097000d0014701902d7cb599dcb5c25d6096e6c8c382ba917fc39bf2f31acb",
+                    "1, 1": "6b8c93fad97ca48ccfad2113c69d15fc31ec318bf3fe6adb17d89ec63835757d67d5069d284efd29adac49fa07677057c4ae11a61cf6008e0e635ea06b0fb8c452e95fc5ca5a95de6b829c9d427d3e15a554dfaf1803b52a1af5fff9fd02a749"
+                },
+                "43": {
+                    "0, 0": "13b267382cd296a6abfe0ed8c74901aa8991ee7a8d510ed213b761d6612b0f1c19cfe76395055f6bef37aa9799058b27b5b2044a0abb5ebc9ac3bbffa90fcc2c80c9a6e83398b7e8debf12f4f8aa94e873b424cd4b2982fcf1af1a01f6a7a3a1",
+                    "0, 1": "bdd8a1d14b5aac9cd95eafe68f43499d6ec96262a92baaacf336276ac5bfd1c5bf0cd3c42a9043fb747af0dc640bf98fe94ddbffb0f8c8a912366dd256d1cabd4c720362d24b61547db1921f7bdb625fd2cd0b37662c43cfbfb6cc25ef9813c5",
+                    "1, 0": "17feed1630a6b1574485cbff161158832f4baa03b2470eec7ddfbb92405e7425561a3587fe76bfb868e0363525f192dd3163b69c4ef1631c639521e0b191facd3a198f6a518d51de2d55d26cf2d06f85488a57ca52830227dc28523209d1aff8",
+                    "1, 1": "0727822d559127c5272163e6fbf549750141bd6e11181f9458d30cd23758cd10de9c238789000c0b9959d4f87733e316f7b83dc69c38b232fe75e778648e9118299d3ba3d803cc0f40deae3e611fce4b1b9dbd315d4e7ac1aa0f8859aee2b999"
+                },
+                "104": {
+                    "0, 0": "d412f7d5997a02a28f7bb7f6095bb44058901ed8980189dc2de36f318cb13fb4b34ecf4d877fbf250b237c94b52822a83d901b6fc1ac82414c39b9e19d36aa17dadd10dccf7b32471c8612696adb2bcc9395ff60e43402e821991b0e4d4df6d0",
+                    "0, 1": "d4b6e263f69b1d6434e927bab05514c52d1232a3602da91a16b87567086ba7270c50def701b0dbedc8294d95d5bd81cf4de731e388026e7f5e6fc831893e30cfa34cf3cd6ae93e0072014c267be593ecf0f6d0c79db2982737b26764c49513a6",
+                    "1, 0": "8ebc66098b86306aec1133985dc7310ca7c5338acc3c3e3f23fdcfb522aafbce82efe1b9992bd144f0f1a8b5ff47a20101acf924b328be9a15b4607dff60969f0301ac92938336a54f1aff04938798e32449f765a6a03b434ce4243ed9f5af0c",
+                    "1, 1": "37a00f20a6f1844387ffdb686c71ce023719796175dac18218667d6534fc2970b1207e4ba17115eebb1049c1fb661287d2a99a85fb05401aedd17b35b9325c8d6fe7e3b364a7510ff50192642e60fd6a03ba0a799e1369e7ef8418b6b264665e"
+                }
+            },
+            "pbits_out": {
+                "101": 0,
+                "102": 1,
+                "103": 0,
+                "104": 1
+            },
+            "type": "circuit"
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "type": "exhausted",
+            "value": false
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": false
+    },
+    {
+        "type": "OT (True)",
+        "data": "Sending inputs to Bob"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "1": "305fc2bdb89737f2b30a51de43d871cf, 0",
+            "2": "2fa74d2d6f96304ac8d8900df098b11f, 0",
+            "3": "7a076f766d1509c5bf73639ffd603f99, 0",
+            "4": "5666af58b819759e56db2b59ecf63454, 1"
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 11
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 11"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 17638611454352893867,
+            "prime_m1": 17638611454352893866,
+            "prime_m2": 17638611454352893865,
+            "generator": 2228493289370994973
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 7701747392334227939
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 11047831641710619366
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "10971783079846746613, 828fbc3fa3efd2f34919a93dcf652e8f6f7580a053cba3e06fbeb17ab17b6b308b15aa, 117935f57d8a3430a44763e75c62f1ac9fdb2696d4ff08b6eaa7b8ecbb13d622b7d705"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 12
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 12"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 15632774059642483091,
+            "prime_m1": 15632774059642483090,
+            "prime_m2": 15632774059642483089,
+            "generator": 13751503942901838560
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 4733136492855069901
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 5110814890229347587
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "5645702041566057538, 8bb37aed71e22ceb392d1d5bd7302cb2d360370726b8118426885c6020ed2fb7248f96, d36ed6fa573f241b8efc7b808abbe5a98e1e745e8d8f3b3dbe3cada2021fc8cea0aa76"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 13
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 13"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 9825459591237326863,
+            "prime_m1": 9825459591237326862,
+            "prime_m2": 9825459591237326861,
+            "generator": 6588649134910093974
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 7273572095050291246
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 5110830507882467577
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "4002406313135328931, bcebd17afbdd08d3f45b172884847c4f48a881277fbbfae162fcd4e75ca8aa13d4dce8, ac0e6f5265380318b5b3ccdaa62e3fe05743f971618357077bf59b4cf04dd9364a375f"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 14
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 14"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 15194867459791858793,
+            "prime_m1": 15194867459791858792,
+            "prime_m2": 15194867459791858791,
+            "generator": 13579949325696491337
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 8865235969818316921
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 10115570064064644650
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "3011054864918172797, 3a6deb16633b4990e923cd92108cafbb0ca4e6ac1b70f305fd98817294c85e8a4bcbe2, d152a0ac5596bd4b09e4c4fe9cb2806c51d4115af51fc27028263ec7edc75069b71d16"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": {
+            "101": 1,
+            "102": 0,
+            "103": 0,
+            "104": 0
+        }
+    },
+    {
+        "type": "intermediate result",
+        "data": {
+            "101": 1,
+            "102": 0,
+            "103": 0,
+            "104": 0
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "type": "exhausted",
+            "value": false
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": false
+    },
+    {
+        "type": "OT (True)",
+        "data": "Sending inputs to Bob"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "1": "305fc2bdb89737f2b30a51de43d871cf, 0",
+            "2": "2fa74d2d6f96304ac8d8900df098b11f, 0",
+            "3": "7a076f766d1509c5bf73639ffd603f99, 0",
+            "4": "5666af58b819759e56db2b59ecf63454, 1"
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 11
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 11"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 8251678088686901417,
+            "prime_m1": 8251678088686901416,
+            "prime_m2": 8251678088686901415,
+            "generator": 5260529889765348753
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 5562356115555236629
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 3874429709693812658
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "5458382194355184297, c3253e8e8da600c8126d83d0ebb721c2189588344b2d3ed6252107cfc38b34cd4959ff, a13ff15cc4cd3053e4ea129e8c8f0337d90423a954efc61fd70766289c832ec701fd31"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 12
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 12"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 16916688624987204169,
+            "prime_m1": 16916688624987204168,
+            "prime_m2": 16916688624987204167,
+            "generator": 12266602146599483104
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 4168590745773315928
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 2193769928594527494
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "3677723529791596693, 603332e5e90c3406e7031bd11d457739771afae09d1e51f3dd296abd2d576b8115b487, e83d7568e2740537ad66df79f8234436d2144948ca50713960eb4d72d4444c030c66d1"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 13
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 13"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 3066336680782459087,
+            "prime_m1": 3066336680782459086,
+            "prime_m2": 3066336680782459085,
+            "generator": 2060605198982786742
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 1581368261280217001
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 2562677936294356465
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "1106671089860543404, a456da536a939a872479d40b5b8b7d11b4f3fcd52ade688daa34e07a3ab2b67bf2fe6b, e848a5f0335aa0b20aff3bf831a1a0d158a322af9a0a3d6a1c3147e4e8a487cf3f394a"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 14
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 14"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 8645144698786053083,
+            "prime_m1": 8645144698786053082,
+            "prime_m2": 8645144698786053081,
+            "generator": 2973713040610534680
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 3079320516360002429
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 8221037565707851821
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "8035118712963229221, f045026ef155c16018c39d37f288a88637af9ce3f67f73d9bb054417fb018ff71b48ee, f8c81b142ad8930826372930b3ca072862bf0179b630e886d280d184c747928746389d"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": {
+            "101": 1,
+            "102": 0,
+            "103": 0,
+            "104": 0
+        }
+    },
+    {
+        "type": "intermediate result",
+        "data": {
+            "101": 1,
+            "102": 0,
+            "103": 0,
+            "104": 0
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "type": "exhausted",
+            "value": false
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": false
+    },
+    {
+        "type": "OT (True)",
+        "data": "Sending inputs to Bob"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "1": "305fc2bdb89737f2b30a51de43d871cf, 0",
+            "2": "2fa74d2d6f96304ac8d8900df098b11f, 0",
+            "3": "7a076f766d1509c5bf73639ffd603f99, 0",
+            "4": "16c3b717a1ce2ecec8083cf045bf2364, 0"
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 11
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 11"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 3229347932243643269,
+            "prime_m1": 3229347932243643268,
+            "prime_m2": 3229347932243643267,
+            "generator": 2945741944821284548
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 1003743670581976635
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 1486534727659199911
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "2043698834258924760, 0ffc91483064ffb79598d273ec31f2c18001326037c6d51ed949fda7e70cc2b7a8e206, e8a5453de5716bf8214b46a298c5b16b9847e13b7592db0650d7c31b61797416febaff"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 12
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 12"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 8900340780279624047,
+            "prime_m1": 8900340780279624046,
+            "prime_m2": 8900340780279624045,
+            "generator": 1532803562574655342
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 3029686480951133469
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 749902413487718574
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "5074662228343644784, cd9b897c61c375ea78aa9555f3c52b40120f3ff4c9ab4dda91176ce356979c2664d6ca, 26f5d0ae891d26be500dce37c2e595ee821a004c9bf8c83f02237e2e3c1af690c6efd5"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 13
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 13"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 3628836886090249439,
+            "prime_m1": 3628836886090249438,
+            "prime_m2": 3628836886090249437,
+            "generator": 1183506467592015440
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 2684069750700240259
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 764071539936948113
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "2509731243986957333, 3661b5f11c07ac110cd5f142844f98ff7661ae39ca2ca2ae001b3c5366bfe14e7d17c9, 5a58672cfd6dd313ea24e0159c314078c6324f40f2fa3935bdf1b7a49a3e5d0aeccd48"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 14
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 14"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 17743286993497024871,
+            "prime_m1": 17743286993497024870,
+            "prime_m2": 17743286993497024869,
+            "generator": 13208624151648797694
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 14036119008204829806
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 10520714275987952738
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "4975737575528242372, 8e5c12ee7a25a8d8b9c97aff2aa999ccff84356f4769c1cbb7ba47ffc3f0e69d51ce7a, b7fbc08d924092c620a71aa0000258a85b02b6e0e6f9b09a606ce74e8d5a1cbf4853f9"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": {
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0
+        }
+    },
+    {
+        "type": "intermediate result",
+        "data": {
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "type": "exhausted",
+            "value": false
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "OT (True)",
+        "data": "Sending inputs to Bob"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "1": "305fc2bdb89737f2b30a51de43d871cf, 0",
+            "2": "2fa74d2d6f96304ac8d8900df098b11f, 0",
+            "3": "10296b143e506837562b0bf39de80dcc, 1",
+            "4": "16c3b717a1ce2ecec8083cf045bf2364, 0"
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 11
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 11"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 16666081950288423899,
+            "prime_m1": 16666081950288423898,
+            "prime_m2": 16666081950288423897,
+            "generator": 8535087385660350662
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 3981604815592598722
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 6857148512436509217
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "2801319601650382742, 1236e2aba9b0793b4e57329174190a877d63d5ac7c3bd50d53f0be4571b522b33ab26e, 52d357c34ebb77ee48c8588c77e91d2cc0e4a0ad356903061f96275290fa2895837f86"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 12
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 12"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 16230154142129375113,
+            "prime_m1": 16230154142129375112,
+            "prime_m2": 16230154142129375111,
+            "generator": 7808767483865672755
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 13420534876393855631
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 13224593747575985220
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "7186752635019928456, 7b0d9870f353211b58a33db8677ed2e284ba0060f54212341a20453ffbd230fbe9a864, d8c6732628917baf31a33ac1859566c97f677152919fa26c1424e90c312a0e0fd21dbc"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 13
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 13"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 16603656144493414963,
+            "prime_m1": 16603656144493414962,
+            "prime_m2": 16603656144493414961,
+            "generator": 13594729928073770494
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 2868970900744593469
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 1408645972101318280
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "12517352271269970932, be4323469d4d3e930bfa1c7c60ce6d04fcd99271e7d6b990b877dd9d854de2a6832141, c66f005e957b127a8721c305d1f46593eb3800424bc7d073ef05ded6d6610b72d14ce6"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 14
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 14"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 16840541940463552313,
+            "prime_m1": 16840541940463552312,
+            "prime_m2": 16840541940463552311,
+            "generator": 9431019006796236517
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 14711534307642310190
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 16109273869051063067
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "5326723219897841163, 8fa08e271b41525e7cd50fc6164e0564095198425100ac3b93fda00005be1e880bb803, 338f1cd745be7017b3ed0eaa624e587d51e7124ad952ab7923476a7507d87d03e1a1bd"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": {
+            "101": 0,
+            "102": 1,
+            "103": 0,
+            "104": 0
+        }
+    },
+    {
+        "type": "intermediate result",
+        "data": {
+            "101": 0,
+            "102": 1,
+            "103": 0,
+            "104": 0
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "type": "exhausted",
+            "value": false
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "OT (True)",
+        "data": "Sending inputs to Bob"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "1": "305fc2bdb89737f2b30a51de43d871cf, 0",
+            "2": "2fa74d2d6f96304ac8d8900df098b11f, 0",
+            "3": "7a076f766d1509c5bf73639ffd603f99, 0",
+            "4": "5666af58b819759e56db2b59ecf63454, 1"
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 11
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 11"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 3100288423204603307,
+            "prime_m1": 3100288423204603306,
+            "prime_m2": 3100288423204603305,
+            "generator": 449917046107118047
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 948160394914505744
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 3041494137819496684
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "2826232766153133413, 0ba4b8d3271836940ea8805c0da6efa896cca078969a477c6cf79b2846f81e757830ec, 0a42e152aee9e87cde302243d1e3edcf0e31b666445da678cbd21313becb47f5732d37"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 12
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 12"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 5919632094280252463,
+            "prime_m1": 5919632094280252462,
+            "prime_m2": 5919632094280252461,
+            "generator": 4536696295539360732
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 2238465250753944818
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 2776070388961846365
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "1036074016729371112, 67cdb0889b19deb02a49b12a907e0c150688c54e90449af9e521787913e0aa533036d2, 176aff16ad2e31d6a6e969d1570dfcddbdd0c087485f977f6c502bdffb2cdfe6cf9eff"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 13
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 13"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 18286555825524712853,
+            "prime_m1": 18286555825524712852,
+            "prime_m2": 18286555825524712851,
+            "generator": 1603600285161248215
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 5701431480595778859
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 9263364572669249675
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "1774501071548830976, b59ab0172d2c5f5c7ee40682b6b0e34bd69d025d70b3a95fe2b0436bf0779cac6b6855, acb350184684c4a4b724394b1f5ef5e259e6a22e767b9896a19d636e6cf7053a047e51"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 14
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 14"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 3537970916143253047,
+            "prime_m1": 3537970916143253046,
+            "prime_m2": 3537970916143253045,
+            "generator": 3402169557950543631
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 3324224345274676166
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 1621455309494324571
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "3262050169274552113, 22d93a1abeb3bda446bc401653fb88544767ec26c04c1859d768a67a267fa406c975cf, 8c859344c3ed9f5e51199aa1624c3c184c188298bfe671ae3fa8f723ea50260801d63d"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": {
+            "101": 1,
+            "102": 0,
+            "103": 0,
+            "104": 0
+        }
+    },
+    {
+        "type": "intermediate result",
+        "data": {
+            "101": 1,
+            "102": 0,
+            "103": 0,
+            "104": 0
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "type": "exhausted",
+            "value": false
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "OT (True)",
+        "data": "Sending inputs to Bob"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "1": "305fc2bdb89737f2b30a51de43d871cf, 0",
+            "2": "2fa74d2d6f96304ac8d8900df098b11f, 0",
+            "3": "7a076f766d1509c5bf73639ffd603f99, 0",
+            "4": "5666af58b819759e56db2b59ecf63454, 1"
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 11
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 11"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 14276211937116763433,
+            "prime_m1": 14276211937116763432,
+            "prime_m2": 14276211937116763431,
+            "generator": 551590501275311323
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 13791931362321365166
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 665406472424322613
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "8100733191668774852, 45eb3073bc4f18ca0cbf668fb0e48012f1cc22cad2dd7016340e96582c08bfebd06ffe, 2d566f7be6674df7f6a0d3acc7c0da9f18237bb7b602023cf83eb56cd4c6db2dd34e19"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 12
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 12"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 10091509127532336731,
+            "prime_m1": 10091509127532336730,
+            "prime_m2": 10091509127532336729,
+            "generator": 5329139124332115403
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 8936956883471447433
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 2510594255274028985
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "7804400504602458339, ccecac87192953c50dc3bb7208c335a89c850d95917df6b9f60acef07483156ae35a72, 3db3809d88800b5f091099435a2f68df9decb7fd74c335a6a71ece22b726ce3f549cdc"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 13
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 13"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 5143695321623890637,
+            "prime_m1": 5143695321623890636,
+            "prime_m2": 5143695321623890635,
+            "generator": 4435236418951970874
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 1047113499961456327
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 4536901196838776594
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "1230398726894405859, fddeb717f9ea0350b69bbf64a2aa603078ba1b13a640ab09524c5f10ca8c0107ac03d5, 86df2588046e0a709dfa0a5f7fad67a20b89aef3898ccc1e2dd474d4ced9060dbbb9b4"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 14
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 14"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 11117752502014214983,
+            "prime_m1": 11117752502014214982,
+            "prime_m2": 11117752502014214981,
+            "generator": 1622544572807489458
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 8294779566079473872
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 1121945630037428750
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "3641777798320637648, a2fb4efbf3c0305f988d304897f34445bdbcb45ccd7c2b99d7c2a2cab143ccb9b7f1fd, fb63a81043ef18068a9260643f65085302f326a1126c428dd4c4f12edec5f5ee9a5237"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": {
+            "101": 1,
+            "102": 0,
+            "103": 0,
+            "104": 0
+        }
+    },
+    {
+        "type": "intermediate result",
+        "data": {
+            "101": 1,
+            "102": 0,
+            "103": 0,
+            "104": 0
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "type": "exhausted",
+            "value": false
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "OT (True)",
+        "data": "Sending inputs to Bob"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "1": "305fc2bdb89737f2b30a51de43d871cf, 0",
+            "2": "2fa74d2d6f96304ac8d8900df098b11f, 0",
+            "3": "7a076f766d1509c5bf73639ffd603f99, 0",
+            "4": "5666af58b819759e56db2b59ecf63454, 1"
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 11
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 11"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 17053405441440517319,
+            "prime_m1": 17053405441440517318,
+            "prime_m2": 17053405441440517317,
+            "generator": 5476660034815784602
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 10648027689309886217
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 9628702373107709722
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "2690459317427755458, df4afbe483c5c4f2504aa3d5c1703d4f76652c436992c77cd2a870d58117c3fcdc6b20, cc968a84f55d6968626e5cea980574c9d408faddfcdca84598984f5ef25ea7740f9534"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 12
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 12"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 13989661869529584727,
+            "prime_m1": 13989661869529584726,
+            "prime_m2": 13989661869529584725,
+            "generator": 4866303918720070409
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 7039338407004764207
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 13471005288134451344
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "8934436963747767125, 09c20472bcd642fe48f6b5cf639a02399eccafecdcf6296df6a589a037d86b6907e983, 1545c18727b50bdc5ad48271238834037d20f4e3ad568d36f0ad9ef43a53390ec5cc13"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 13
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 13"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 117286819901371973,
+            "prime_m1": 117286819901371972,
+            "prime_m2": 117286819901371971,
+            "generator": 39008254697474921
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 28930285461081965
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 10158617729917502
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "42872235607613083, 22fb968517de88879bfcab3cbd0e20d4240fc6495883b773fc7115a1a19e86f78411a9, 274cf8263ecf63fabbfa1808f422e93207f02c759d2ec2dce1add4c6cf1a13f36b80cb"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 14
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 14"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 10440770313455472169,
+            "prime_m1": 10440770313455472168,
+            "prime_m2": 10440770313455472167,
+            "generator": 850524927413027800
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 666139708864771869
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 1687917956327858594
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "8699667973501683331, 0924ebf0e186734e6160de16469b321533b29f075fa7456af5f32418e29a59db3378dd, 3023c185783349f6bb72ef9e3c3ee01a68bb2b9bef863643fe5f731e0bc87cd4337815"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": {
+            "101": 1,
+            "102": 0,
+            "103": 0,
+            "104": 0
+        }
+    },
+    {
+        "type": "intermediate result",
+        "data": {
+            "101": 1,
+            "102": 0,
+            "103": 0,
+            "104": 0
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "type": "exhausted",
+            "value": false
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "OT (True)",
+        "data": "Sending inputs to Bob"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "1": "305fc2bdb89737f2b30a51de43d871cf, 0",
+            "2": "2fa74d2d6f96304ac8d8900df098b11f, 0",
+            "3": "7a076f766d1509c5bf73639ffd603f99, 0",
+            "4": "5666af58b819759e56db2b59ecf63454, 1"
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 11
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 11"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 5551014815451729343,
+            "prime_m1": 5551014815451729342,
+            "prime_m2": 5551014815451729341,
+            "generator": 1545290560191455997
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 4568921627822635169
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 2430507910257823704
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "2453510969065367034, ffc338cc1b7fd8f5b67b1d9aebf85a9f53658a46e8ee18a2005ebaba8e5c17a245bbb6, 2c7609e5501300ddd45185ccc02bc7c853fd5daa94948ed92ccca8eeeaf0e4a2189141"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 12
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 12"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 3028480595062907477,
+            "prime_m1": 3028480595062907476,
+            "prime_m2": 3028480595062907475,
+            "generator": 465657605975449385
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 903748151021278470
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 1870295883013523054
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "2898551100022928721, 294cadfce203abf2f84a043fb312b7e9f877378b40638bc7c0ee82a72091238416f669, 3af90ef67d064cc3d480e4c78ea08d5430d85902500c4a37e56499c1f230d4c13eaf3c"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 13
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 13"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 1607216059269497759,
+            "prime_m1": 1607216059269497758,
+            "prime_m2": 1607216059269497757,
+            "generator": 20293025242988294
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 1488692571954382961
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 245176627170122012
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "1571406176554890218, dc675b19aa3588a635b7e1a7fe5170c9fe2765cc8841536ab6b4275a48f0223ed42fd5, 1f72dd0ac656ae56b211d9a6d628ab52ebec185e236254e553f1d1d479f22bdbc24013"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 14
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 14"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 7746897010179878233,
+            "prime_m1": 7746897010179878232,
+            "prime_m2": 7746897010179878231,
+            "generator": 4478719375350522010
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 2156104683408367566
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 3652192989161123969
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "6210812027034192651, f041c3b29ecd5cadb90066814222da7ae8135076b2363c5a2796edcb9a62bee4d93af5, 9882c4db62bee3362a6707795cb96a1d8405e8653431ad93b08f5c35d1833601fd5e6f"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": {
+            "101": 1,
+            "102": 0,
+            "103": 0,
+            "104": 0
+        }
+    },
+    {
+        "type": "intermediate result",
+        "data": {
+            "101": 1,
+            "102": 0,
+            "103": 0,
+            "104": 0
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "type": "exhausted",
+            "value": false
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "OT (True)",
+        "data": "Sending inputs to Bob"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "1": "0344abc9a6c8fb2c758de54f92901f8e, 1",
+            "2": "e0cc9c2729f5c09ac2306544f0a0acb6, 1",
+            "3": "7a076f766d1509c5bf73639ffd603f99, 0",
+            "4": "5666af58b819759e56db2b59ecf63454, 1"
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 11
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 11"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 8154047631066312649,
+            "prime_m1": 8154047631066312648,
+            "prime_m2": 8154047631066312647,
+            "generator": 6913845487754949645
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 1863314079370839731
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 3844580379870614425
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "7937002709069605666, 8d6fb2ee66ca145e5328f5de02358e6e676891a7c7b511951cf0e14719d581f288c9cb, 3fe0724fc37a2e74b615e380ee08fb24617439eb3928de3bb8f1b58bea8fa5348933c5"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 12
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 12"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 14898335593164410113,
+            "prime_m1": 14898335593164410112,
+            "prime_m2": 14898335593164410111,
+            "generator": 5694697560936620604
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 858888933107133890
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 7113850139378975879
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "7452603538959063634, e20b591baf871673087f8a627b8694002bab1398798ad467336d636eb6e6da4262cd49, 45276db661d1926bc6f131da3fd1e1daab133b1a3aea2d0ccf18f44a1a260615479e37"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 13
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 13"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 18236326634916301787,
+            "prime_m1": 18236326634916301786,
+            "prime_m2": 18236326634916301785,
+            "generator": 12937485334169954696
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 8732927425217354780
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 16226521173089561096
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "11034619320606796815, 3ae49bffcbc854e440d9b9fb255209e6a10aaac4b9ec41274b676fad86da92a5176c06, 79670b84b3a1274cf98877c966c9c6f5c8633897ae1fa672981503ce25e2bd91e5b111"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 14
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 14"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 17381083103619651433,
+            "prime_m1": 17381083103619651432,
+            "prime_m2": 17381083103619651431,
+            "generator": 6927322553553728585
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 2743140530977410039
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 4496894448344262617
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "13286314918430138980, 53c3753bd99c398a2e7a0f9d4c6e2f857590655a22a151f733e6d81ec53a51741aa55a, fe2d9ecdb3e4ff1116b1431e47a405b75e49e37185be6294093e68d706462b6aff9f29"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": {
+            "101": 1,
+            "102": 0,
+            "103": 1,
+            "104": 1
+        }
+    },
+    {
+        "type": "intermediate result",
+        "data": {
+            "101": 1,
+            "102": 0,
+            "103": 1,
+            "104": 1
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "type": "exhausted",
+            "value": true
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "OT (True)",
+        "data": "Sending inputs to Bob"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "1": "305fc2bdb89737f2b30a51de43d871cf, 0",
+            "2": "2fa74d2d6f96304ac8d8900df098b11f, 0",
+            "3": "7a076f766d1509c5bf73639ffd603f99, 0",
+            "4": "5666af58b819759e56db2b59ecf63454, 1"
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 11
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 11"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 11336626341903534481,
+            "prime_m1": 11336626341903534480,
+            "prime_m2": 11336626341903534479,
+            "generator": 3438264087283436067
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 9481269583111383898
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 6167635113867257293
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "6419761736730201019, 674c72be8c7ab3724b93226158a65c26bf78c16e7121784c14c394c4d9434ecab82aef, 27a82b13ae56779da80b61422d60980de5c8ce2bce1f4834f1e3f5da059cbb9b9e8ffd"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 12
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 12"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 3123419548488547757,
+            "prime_m1": 3123419548488547756,
+            "prime_m2": 3123419548488547755,
+            "generator": 2211301290060492086
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 113072288868211362
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 2046343375813384635
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "996368306445870993, 00c9df679c84dc6afc3a04530e069048f38c3c81deb072fcd89063f212969362a30d92, 4b44161de1a4354afb97481121ce7d00965c2ee6b52cd5f99178cacab983335457f65f"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 13
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 13"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 18378797552044213489,
+            "prime_m1": 18378797552044213488,
+            "prime_m2": 18378797552044213487,
+            "generator": 3087480010475213677
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 9956685222184103191
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 2336712978211208674
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "10854503995436677878, 2c0a078f21508b03316e2b627606fd5a64a85d9c7000249f7b297fcb5b86f70b1197b4, 08febf0d35b1cfa059a0e3286da8ced69124e5dcd04e4daefb0f6b4e95d5f22861184e"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 14
+    },
+    {
+        "type": "OT (True)",
+        "data": "Received gate ID 14"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol started"
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "object": "PrimeGroup",
+            "prime": 5853841018517197571,
+            "prime_m1": 5853841018517197570,
+            "prime_m2": 5853841018517197569,
+            "generator": 1725493366260328503
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": 3645794468385506828
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": 4457427621710250748
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": "983839578708422369, 9d556af1330f45bb7ca5a420cae2f6702979da073bfdca2f2675f8f59d49481ca5a043, 3a4a3a9a1fb129d80cb7505bfbcc7e27a2321cbf428fb36e52dbf89c27f516d024e08e"
+    },
+    {
+        "type": "OT (True)",
+        "data": "OT protocol ended"
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": {
+            "101": 1,
+            "102": 0,
+            "103": 0,
+            "104": 0
+        }
+    },
+    {
+        "type": "intermediate result",
+        "data": {
+            "101": 1,
+            "102": 0,
+            "103": 0,
+            "104": 0
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "send",
+        "data": {
+            "type": "exit"
+        }
+    },
+    {
+        "type": "communication",
+        "direction": "receive",
+        "data": true
+    }
+]
